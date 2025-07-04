@@ -1,4 +1,4 @@
-package com.appswarehouse.android.apps.cryptolearner.presentation.coin_list
+package com.appswarehouse.android.apps.cryptolearner.presentation.coin_list.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row

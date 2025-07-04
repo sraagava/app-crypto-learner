@@ -6,6 +6,8 @@ import com.appswarehouse.android.apps.cryptolearner.data.repository.CoinReposito
 import com.appswarehouse.android.apps.cryptolearner.domain.repository.CoinRepository
 import com.appswarehouse.android.apps.cryptolearner.domain.use_case.coins.GetCoinUseCase
 import com.appswarehouse.android.apps.cryptolearner.domain.use_case.coins.GetCoinsUseCase
+import com.appswarehouse.android.apps.cryptolearner.presentation.coin_list.CoinListViewModel
+import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -34,5 +36,9 @@ val appModules = module {
 
     factory {
         GetCoinsUseCase(get())
+    }
+
+    viewModel {
+        CoinListViewModel(get())
     }
 }
